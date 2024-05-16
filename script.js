@@ -16,6 +16,8 @@ button.addEventListener("click", function (event) {
   // Check if the email is valid
   if (!emailRegex.test(emailValue)) {
     label.textContent = "Please provide a valid email address";
+    label.style.color = "hsl(354, 100%, 66%)";
+    secondLabel.style.color = "hsl(354, 100%, 66%)";
     secondLabel.textContent = "Please provide a valid email address";
     email.style.borderColor = "hsl(354, 100%, 66%)";
     return;
@@ -24,6 +26,8 @@ button.addEventListener("click", function (event) {
     label.style.color = "blue";
     secondLabel.textContent = "Thank you! Your email address has been added";
     secondLabel.style.color = "blue";
+    email.style.borderColor = "blue";
+
     // Reset the email input value
     email.value = "";
     return;
