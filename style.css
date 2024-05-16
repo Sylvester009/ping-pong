@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  padding: 50px;
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.title {
+  font-size: 22px;
+  padding: 30px 0px 10px;
+  color: var(--Gray);
+}
+
+.span-title {
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+}
+
+.text,
+label,
+.second-label {
+  color: var(--Gray);
+  font-weight: 500;
+  line-height: 1.3rem;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  margin: 0px 0px 5px;
+}
+
+.email {
+  color: var(--Gray);
+  padding: 10px 20px;
+  border: 1px solid var(--PaleBlue);
+  border-radius: 45px;
+}
+
+.email:active {
+  border-color: var(--Blue);
+}
+
+label,
+.second-label {
+  color: var(--LightRed);
+}
+
+.second-label {
+  display: none;
+}
+
+.button {
+  background-color: var(--Blue);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px var(--PaleBlue);
+}
+
+.main-image-division {
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.dashboard {
+  margin: 0 auto;
+}
+
+.icon-division {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.icon-division img {
+  width: 20px;
+  height: auto;
+}
+
+footer p {
+  color: var(--Gray);
+  font-size: 13px;
+  padding-top: 7px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 801px) {
+  body {
+    padding: 50px 25%;
+  }
+
+  .main {
+    padding: 0% 15%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .form {
+    flex-direction: row;
+  }
+
+  label {
+    width: 0%;
+    display: none;
+  }
+
+  .second-label {
+    display: block;
+    text-align: left;
+  }
+
+  .email {
+    width: 70%;
+  }
+
+  .button {
+    width: 30%;
+  }
+}
