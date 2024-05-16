@@ -45,6 +45,7 @@ body {
   font-size: 22px;
   padding: 30px 0px 10px;
   color: var(--Gray);
+  font-weight: 400;
 }
 
 .span-title {
